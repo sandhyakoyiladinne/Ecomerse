@@ -32,7 +32,7 @@ body{
 }
 .headline{
     font-family: "Poppins", sans-serif;
-    color: rgb(255, 113, 150);
+    color: rgb(227, 46, 215);
     padding: 1%;
     display: flex;
     justify-content: space-between;
@@ -88,7 +88,7 @@ a{
     font-size:3em;
 }
 .butn{
-    background-color:lightcoral;
+    background-color:rgba(219, 43, 164, 0.925);
     padding: 13px;
     border-radius:3px ;
     border: none;
@@ -141,6 +141,8 @@ a{
 .main2{
     display: flex;
     justify-content: space-between;
+
+    
     
 }
 .asider{
@@ -155,6 +157,7 @@ a{
     font-family: "Poppins", sans-serif;
     display: block;
     flex-wrap: wrap;
+    margin-top: 3%;
 }
 .left_asider{
     display: flex;
@@ -232,28 +235,29 @@ a{
 .main3{
     margin: 10px;
     padding: 10px;
-   
+    margin-left: 5%;
    
 }
 .box1{
-    border: 1px solid gray;
+    border: 1px solid rgb(223, 223, 223);
     border-radius: 5px;
     justify-content: flex-start;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-    /* height: 30vh; */
+    height: 150%;
 }
 .box_img img{
-    width: 100%;
-    padding: 10px;
-    height: 90%;
+    width: 50%;
+    /* padding: 10px; */
+    height: 120%;
+    margin-left: 20%;
 }
 .all_content{
     font-size: 1em;
     padding: 3px;
     padding-right: 5px;
-    width: 100%;
+    width: 50%;
     font-family: "Poppins", sans-serif;
     display: block;
     font-size: 1em;
@@ -301,7 +305,8 @@ a{
     margin: 2%;
     width: 98%;
     margin-bottom: 4%;
-    margin-left: 1%;
+    /* margin-left: 1%; */
+    
 }
 .new_product h1{
     font-weight: bold;
@@ -348,12 +353,12 @@ a{
     /* justify-content: space-between; */
     align-items: stretch;
     width: 100%;
-    height: 70vh;
+    height: 100%;
 }
 .leftpart{
     height: 100%;
-    width: 25%;
-    box-shadow: 0px 0px 1px grey;
+    width: 30%;
+    box-shadow: 0px 0px 1px rgb(233, 230, 230);
     border-radius: 5px;
     margin: 2%;
     /* display: block; */
@@ -362,44 +367,44 @@ a{
     border: 1px solid grey;
 }
 .inventor img{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     text-align: center;
     padding: 15px;
 }
 .user{
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: "Poppins", sans-serif;
     padding: 10px;
 }
 .work{
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: "Poppins", sans-serif;
-    padding: 5px;
+    padding: 1%;
 }
 .main5{
     background-image: url("https://img.freepik.com/free-photo/carnival-still-life-arrangement-with-copy-space_23-2149130130.jpg?t=st=1709573446~exp=1709577046~hmac=5e66b7b899cc73bd9cda039bd770996c9831e921fce1415a9e6b6a677be710cb&w=826");
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 20px;
     border-radius: 8px;
+    justify-content: baseline;
 }
 .midpic{
     margin: 10%;
     width: 50%;
     background-color: pink;
     opacity: 0.7;
-    place-items: center;
     text-align: center;
+    margin-top: 20%;
     padding: 5%;
     border-radius: 5%;
     font-family: "Poppins", sans-serif;
-    height: 35vh;
-    margin-top: 110px;
+    height: 50%;
     margin-left: 90px;
 }
 .discount{
@@ -420,10 +425,10 @@ a{
 .rightpart{
     /* display: flex; */
     justify-content: center;
-    width: 50vw;
+    width: 60vw;
     height: 100%;
     /* flex-wrap: wrap; */
-    padding: 5%;
+    padding: 3%;
 }
 .blocker{
     display: flex;
@@ -536,6 +541,12 @@ a{
     font-family: "Poppins", sans-serif;
     display: block;
 }
+.topon1{
+    display: none;
+}
+.navbar2{
+    display: none;
+}
 /* --------------ipad Air---------------- */
 @media screen and (max-width: 1100px){
 .topflex {
@@ -566,6 +577,12 @@ a{
     justify-content: space-between;
     align-items: center;
     margin-left: 10%;
+    height: fit-content;
+    
+}
+.block{
+    width: 100%;
+    margin-top: 20%;
 }
 .main2center{
     flex-wrap: wrap;
@@ -574,17 +591,61 @@ a{
     height: fit-content;
 }
 .category{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
     flex-wrap: wrap;
     font-size: 0.8em;
 }
+.prod{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    grid-template-rows: repeat(6,15%);
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
 }
-/* <=================Mobile response===============> */
-/* @media screen and (max-width:680px){
-    .selection_menu{
-        display: none;
-    }
-    .topflex p{
-        font-size: 0.8em;
-        margin-left: 20%;
-    }
-} */
+.leftpart{
+    width: 100%;
+    place-items: center;
+}
+.main4{
+    display: grid;
+    place-items: center;  
+}
+.rightpart{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.popular1{
+    padding: 3% 2%;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    list-style: none;
+}
+.topon1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-right: 50%;
+}
+.navbar2{
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 80%;
+    height: 3%;
+    left: 6%;
+    justify-content: space-evenly;
+    border: 1px solid  rgb(242, 238, 238);;
+}
+}
