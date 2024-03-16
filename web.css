@@ -607,6 +607,7 @@ a{
 .leftpart{
     width: 100%;
     place-items: center;
+    margin-top: 10%;
 }
 .main4{
     display: grid;
